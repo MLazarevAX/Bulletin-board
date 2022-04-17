@@ -1,0 +1,42 @@
+header h1 {
+    font-size: 40pt;
+    text-transform: uppercase;
+    text-align: center;
+    color: greenyellow;
+}
+nav {
+    font-size: 16pt;
+    width: 150px;
+    float: left;
+}
+
+nav a {
+    display: -moz-box;
+    margin: 20px 0px;
+    color: greenyellow;
+}
+
+section {
+    margin-left: 170px;
+}
+
+#margin-block {
+    margin-left: 170px;
+    color: green;
+    font-size: 12pt;
+    text-transform: uppercase;
+    padding-top: 55px;
+}
+
+body {
+ background-color: #000;
+ background: url('bg.jpg');
+ background-repeat: no-repeat;
+ background-size: 100%;
+}
+
+h2 {
+    font-size: 16pt;
+    width: 150px;
+    color: greenyellow;
+}

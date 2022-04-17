@@ -1,12 +1,17 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}Главная :: Доска объявлений {% endblock title %}</title>
+    <link rel="stylesheet" type="text/css"
+          href="{% static 'bboard/style.css' %}">
 </head>
 <body>
+    <header>
     <h1>{% block h1 %} Объявления {% endblock h1 %}</h1>
     {% block h2 %}  {% endblock h2%}
+    </header>
     <nav>
         <a href="{% url 'index' %}">Главная</a>
         <a href="{% url 'add' %}">Добавить</a>
@@ -15,6 +20,7 @@
         {% endfor %}
     </nav>
     <section>
+    <div id="margin-block">
     {% block main %}
     {% for bb in bbs %}
         <div>
@@ -24,6 +30,7 @@
         </div>
     {% endfor %}
     {% endblock main %}
+    </div>
     </section>
 </body>
 </html>
