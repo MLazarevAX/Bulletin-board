@@ -1,33 +1,7 @@
-from . import views
+from .views import by_rubric, index
 from django.urls import path
 
 urlpatterns = [
-    path("", views.index)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    path('<int:rubric_id>/', by_rubric),
+    path("", index)
 ]
